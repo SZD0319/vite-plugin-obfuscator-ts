@@ -1,0 +1,52 @@
+{
+    "name": "vite-plugin-obfuscator-ts",
+    "version": "3.0.0",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "keywords": [
+        "vite",
+        "plugin",
+        "obfuscator",
+        "typescript"
+    ],
+    "author": "Silence",
+    "license": "ISC",
+    "description": "A vite obfuscator plugin based on typescript",
+    "files": [
+        "dist",
+        "package.json",
+        "README.md"
+    ],
+    "repository": {
+        "url": ""
+    },
+    "scripts": {
+        "build": "unbuild",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "chalk": "^5.4.1",
+        "javascript-obfuscator": "^4.1.1",
+        "minimatch": "^10.0.1",
+        "ora": "^8.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.5",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.2",
+        "unbuild": "^3.3.1",
+        "vite": "^6.1.0"
+    },
+    "peerDependencies": {
+        "vite": "^5.4.11"
+    }
+}
